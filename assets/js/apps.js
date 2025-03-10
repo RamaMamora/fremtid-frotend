@@ -4,17 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
     { title: "billede1", img: "./assets/img/developer.webp", alt: "developer" },
     {
       title: "billede2",
-      img: "./assets/img/ai-with-person.avif",
+      img: "./assets/img/ai-with-person.webp",
       alt: "ai-with-person",
     },
     {
       title: "billede3",
-      img: "./assets/img/ai-with-computer.avif",
+      img: "./assets/img/ai-with-computer.webp",
       alt: "ai-with-computer",
     },
     {
       title: "billede4",
-      img: "./assets/img/programming.avif",
+      img: "./assets/img/programming.webp",
       alt: "programming",
     },
   ];
@@ -77,19 +77,19 @@ document.addEventListener("DOMContentLoaded", () => {
     "section2",
     [
       [
-        "/assets/img/kode.png",
-        "/assets/img/ai-work-on-chair.avif",
-        "/assets/img/person-work.png",
+        "/assets/img/kode.webp",
+        "/assets/img/ai-work-on-chair.webp",
+        "/assets/img/person-work.webp",
       ],
       [
-        "/assets/img/person-work.png",
-        "/assets/img/kode.png",
-        "/assets/img/ai-work-on-chair.avif",
+        "/assets/img/person-work.webp",
+        "/assets/img/kode.webp",
+        "/assets/img/ai-work-on-chair.webp",
       ],
       [
-        "/assets/img/ai-work-on-chair.avif",
-        "/assets/img/person-work.png",
-        "/assets/img/kode.png",
+        "/assets/img/ai-work-on-chair.webp",
+        "/assets/img/person-work.webp",
+        "/assets/img/kode.webp",
       ],
     ],
     5000

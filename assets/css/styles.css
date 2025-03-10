@@ -350,6 +350,9 @@ a:hover {
     font-size: 16px;
     text-align: center;
   }
+  .video-info iframe {
+    width: 200px;
+  }
 
   .footer-content p {
     font-size: 18px;
@@ -364,10 +367,10 @@ a:hover {
   }
 }
 
-/* 📌 Tablet (medium skærme, 768px til 1024px bred) */
+/*  Tablet  */
 @media screen and (max-width: 1024px) {
   .slider-wrapper {
-    height: 500px; /* Juster headerstørrelse */
+    height: 500px;
   }
 
   .header-title {
@@ -377,17 +380,17 @@ a:hover {
 
   .container,
   .text-container {
-    padding: 60px; /* Reduceret padding */
+    padding: 60px;
   }
 
   .info-box {
-    flex-direction: column; /* Stack elementer på mindre skærme */
+    flex-direction: column;
     gap: 50px;
     margin: 0 auto;
   }
 
   .animated-image {
-    max-width: 250px; /* Reducer billedestørrelse */
+    max-width: 250px;
   }
 
   .footer-content p {
@@ -403,10 +406,10 @@ a:hover {
   }
 }
 
-/* 📌 Desktop (store skærme, over 1024px bred) */
+/* Desktop */
 @media screen and (min-width: 1025px) {
   .slider-wrapper {
-    height: 600px; /* Behold stor header */
+    height: 600px;
   }
 
   .header-title {
@@ -420,7 +423,7 @@ a:hover {
   }
 
   .info-box {
-    flex-direction: row; /* Behold side-om-side layout */
+    flex-direction: row;
   }
 
   .animated-image {
