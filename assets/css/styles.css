@@ -1,1 +1,313 @@
-@import url("https://fonts.googleapis.com/css2?family=Itim&
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Jacquard+24&family=Jost:ital,wght@0,100..900;1,100..900&family=Kavoon&family=Signika:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Itim&family=Jost:ital,wght@0,100..900;1,100..900&family=Kavoon&family=Lilita+One&family=Sigmar&family=Signika:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Header-styling */
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+}
+
+/* Slideshow styling */
+.slides {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: 400%;
+  height: 100%;
+}
+
+/* Individuelle slides */
+.single-slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optimeret billedestørrelse */
+.single-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Zoom-effekt på det aktive billede */
+.single-slide img.active {
+  transform: scale(1.05);
+}
+
+/* 🔥 NYT: Stiling og animation til overskriften i header */
+.header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 40px;
+  border-radius: 10px;
+  z-index: 10;
+  font-family: "Lilita One", sans-serif;
+
+  /* Animation */
+  opacity: 0;
+  transform: translate(-50%, -60px);
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+/* Keyframes til fade-in og slide-up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -80px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.container,
+.text-container {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #d2d8da;
+}
+
+.box,
+.text-container article {
+  background-color: #53a8b6;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1100px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box:hover,
+.text-container article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.info-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  align-items: center;
+  text-align: start;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 32px;
+  color: #045855;
+  margin-bottom: 30px;
+  font-family: "Itim", cursive;
+}
+span {
+  font-size: 22px;
+  padding: 10px;
+
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+  color: #222121;
+  line-height: 1.8;
+  font-family: "Signika", sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.box img {
+  border-radius: 20px;
+  width: 50%;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.animated-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out,
+    filter 0.4s ease-in-out;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  transform-origin: center;
+}
+
+.animated-image:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 30px 60px rgba(7, 5, 5, 0.3);
+  filter: brightness(1.1);
+}
+
+/* 🌟 Blød fade-in animation ved load */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-container p {
+  font-size: 18px;
+  color: #393838;
+  line-height: 1.8;
+  font-family: "Signika", sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: left;
+  background-color: #f4f4f4;
+  padding: 12px;
+  border-left: 6px solid #195f5d;
+  border-radius: 6px;
+}
+
+a {
+  display: inline-block;
+  margin-top: 15px;
+  width: 300px;
+  padding: 12px 24px;
+  background-color: #195f5d;
+  color: #dad7d7;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  font-family: "Sigmar", sans-serif;
+  font-weight: 100;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.4s ease-in-out;
+}
+
+a:hover::before {
+  left: 100%;
+}
+
+a:hover {
+  background-color: #eaeeee;
+  color: #195f5d;
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.text-container h3 {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 15px;
+  font-family: "Comfortaa", sans-serif;
+  text-align: center;
+}
+.video-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #195f5d;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* Tekst i footer */
+.footer-content p {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  color: white;
+}
+
+/* Scroll op pil */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #53a8b6;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Når brugeren scroller, vis pilen */
+.scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hover-effekt */
+.scroll-top:hover {
+  background-color: #417c8b;
+  transform: scale(1.1);
+}
