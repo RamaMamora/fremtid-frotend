@@ -18,7 +18,6 @@
   background-color: #222;
 }
 
-/* Slideshow styling */
 .slides {
   display: flex;
   transition: transform 1s ease-in-out;
@@ -26,7 +25,6 @@
   height: 100%;
 }
 
-/* Individuelle slides */
 .single-slide {
   min-width: 100%;
   height: 100%;
@@ -35,7 +33,6 @@
   justify-content: center;
 }
 
-/* Optimeret billedestørrelse */
 .single-slide img {
   width: 100%;
   height: 100%;
@@ -43,12 +40,11 @@
   border-radius: 10px;
   transition: transform 0.5s ease-in-out;
 }
-
-/* Zoom-effekt på det aktive billede */
-.single-slide img.active {
-  transform: scale(1.05);
+.img1-text {
+  width: 100%;
+  border-radius: 20px;
+  height: 400px;
 }
-
 /* 🔥 NYT: Stiling og animation til overskriften i header */
 .header-title {
   position: absolute;
