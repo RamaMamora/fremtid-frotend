@@ -350,6 +350,10 @@ strong {
     font-size: 16px;
     text-align: center;
   }
+  .img1-text {
+    width: 200px;
+    height: 200px;
+  }
   .video-info iframe {
     width: 200px;
   }
